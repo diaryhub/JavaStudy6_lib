@@ -17,6 +17,11 @@ public class ObjectMain {
 		
 		System.out.println(str);
 		
+		Car car = new Car();
+		
+		System.out.println(car);
+		System.out.println(car.toString());
+		
 		FireCar fc = new FireCar();
 		
 		fc.hashCode();
