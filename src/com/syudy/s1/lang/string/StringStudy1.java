@@ -80,13 +80,15 @@ public class StringStudy1 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("파일명 입력:");
 		String file = sc.next();
-		if(file.indexOf(".jpg")>=0||file.indexOf(".gif")>=0||file.indexOf(".png")>=0) {
+		String result = file.substring(file.lastIndexOf("."+1));
+		
+		if(result.equals("png")||result.equals("jpg")||result.equals("gif")) {
 			System.out.println("이미지 파일입니다.");
 		}
-		else if(file.indexOf(".txt")>=0||file.indexOf(".pdf")>=0||file.indexOf(".hwp")>=0) {
+		else if(result.equals("txt")||result.equals("hwp")||result.equals("pdf")) {
 			System.out.println("문서 파일입니다.");
 		}
-		else if(file.indexOf(".mp3")>=0||file.indexOf(".wav")>=0||file.indexOf(".ogg")>=0) {
+		else if(result.equals("mp3")||result.equals("ogg")||result.equals("wav")) {
 			System.out.println("음원 파일입니다.");
 		}
 		else
