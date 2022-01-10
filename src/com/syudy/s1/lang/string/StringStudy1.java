@@ -1,5 +1,7 @@
 package com.syudy.s1.lang.string;
 
+import java.util.Scanner;
+
 public class StringStudy1 {
 	
 	public void study1() {
@@ -61,5 +63,64 @@ public class StringStudy1 {
 		}
 		System.out.println(count);
 	}
+	
+	public void subStringTest() {
+		String title = "West Side Story";
+		String result = title.substring(title.indexOf("S"),9);
+		System.out.println(result);
+	}
+	
+	public void subStringEX1() {
+		//키보드로부터 업로드 할 파일명 입력
+		//a.txt, b.pdf, c.jpg
+		//jpg, gif, png ->이미지 파일입니다 출력
+		//txt, pdf, hwp ->문서 파일입니다 출력
+		//mp3, wav, ogg ->음원 파일입니다 출력
+		//나머지는 알 수 없는 파일입니다 출력
+		Scanner sc = new Scanner(System.in);
+		System.out.println("파일명 입력:");
+		String file = sc.next();
+		if(file.indexOf(".jpg")>=0||file.indexOf(".gif")>=0||file.indexOf(".png")>=0) {
+			System.out.println("이미지 파일입니다.");
+		}
+		else if(file.indexOf(".txt")>=0||file.indexOf(".pdf")>=0||file.indexOf(".hwp")>=0) {
+			System.out.println("문서 파일입니다.");
+		}
+		else if(file.indexOf(".mp3")>=0||file.indexOf(".wav")>=0||file.indexOf(".ogg")>=0) {
+			System.out.println("음원 파일입니다.");
+		}
+		else
+			System.out.println("알 수 없는 파일입니다.");
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
