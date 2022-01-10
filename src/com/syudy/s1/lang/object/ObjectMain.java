@@ -16,6 +16,15 @@ public class ObjectMain {
 		String str = obj.toString();
 		
 		System.out.println(str);
+		
+		FireCar fc = new FireCar();
+		
+		fc.hashCode();
+		
+		obj = fc;
+		
+		
+		
 	}
 
 	
