@@ -115,11 +115,13 @@ public class StringStudy1 {
 	}
 
 	public void caseTest() {
-		String title = "West Side Story";
+		String title = " West Side Story ";
 		String result1 = title.toLowerCase();
 		String result2 = title.toUpperCase();
+		String result3 = title.trim();
 		System.out.println(result1);
 		System.out.println(result2);
+		System.out.println(result3);
 	}
 	
 	
