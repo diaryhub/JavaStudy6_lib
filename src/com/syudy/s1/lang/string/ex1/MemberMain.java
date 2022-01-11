@@ -14,6 +14,7 @@ public class MemberMain {
 			System.out.println("pw" + (i + 1) + " :" + mDTO[i].getPw());
 			System.out.println("name" + (i + 1) + " :" + mDTO[i].getName());
 			System.out.println("email" + (i + 1) + " :" + mDTO[i].getEmail());
+			System.out.println("age" + (i + 1) + " :" + mDTO[i].getAge());
 			System.out.println("=================================");
 		}
 	}
