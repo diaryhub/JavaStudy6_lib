@@ -125,8 +125,23 @@ public class StringStudy1 {
 	}
 	
 	
+	public void valueOfTest() {
+		int num = 1000;
+		String result = String.valueOf(num);
+		System.out.println(result);
+	}
 	
-	
+	public void splitTest() {
+		String name = "a,b,c,d,e,f";
+		
+		String [] nameArray = name.split(",");
+
+		for(int i=0;i<nameArray.length;i++) {
+			System.out.println(nameArray[i]);
+		}
+		
+		
+	}
 	
 	
 	
