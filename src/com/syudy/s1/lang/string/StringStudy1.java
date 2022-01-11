@@ -2,6 +2,12 @@ package com.syudy.s1.lang.string;
 
 import java.util.Scanner;
 
+
+
+
+
+
+
 public class StringStudy1 {
 	
 	public void study1() {
@@ -95,34 +101,40 @@ public class StringStudy1 {
 			System.out.println("알 수 없는 파일입니다.");
 	}
 
+	
+	
+	
+	public void replaceTest() {
+		String title = "West Side Story";
+		
+		String rep = title.replace("West", "North");
+		
+		System.out.println(title);
+		System.out.println(rep);
+		
+	}
+
+	public void caseTest() {
+		String title = "West Side Story";
+		String result1 = title.toLowerCase();
+		String result2 = title.toUpperCase();
+		System.out.println(result1);
+		System.out.println(result2);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
