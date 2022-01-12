@@ -1,4 +1,4 @@
-package com.syudy.s1.lang.string.ex1;
+package com.study.s1.lang.string.ex1;
 
 public class MemberMain {
 

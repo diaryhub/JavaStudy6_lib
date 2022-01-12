@@ -1,4 +1,4 @@
-package com.syudy.s1.lang.string;
+package com.study.s1.lang.string;
 
 public class StringMain {
 

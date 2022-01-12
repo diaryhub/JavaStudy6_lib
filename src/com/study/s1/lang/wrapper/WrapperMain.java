@@ -1,4 +1,4 @@
-package com.syudy.s1.lang.wrapper;
+package com.study.s1.lang.wrapper;
 
 public class WrapperMain {
 

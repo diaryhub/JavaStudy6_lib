@@ -1,4 +1,4 @@
-package com.syudy.s2.util.token;
+package com.study.s2.util.token;
 
 public class SeasonDTO {
 	private String name;

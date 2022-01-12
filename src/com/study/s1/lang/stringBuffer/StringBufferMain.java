@@ -1,4 +1,4 @@
-package com.syudy.s1.lang.stringBuffer;
+package com.study.s1.lang.stringBuffer;
 
 public class StringBufferMain {
 
