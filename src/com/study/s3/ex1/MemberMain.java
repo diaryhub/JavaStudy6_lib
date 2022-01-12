@@ -10,6 +10,9 @@ public class MemberMain {
 		MemberDTO mem1 = new MemberDTO();
 
 		ArrayList<MemberDTO> mDTO = md.init();
+	
+		mem1 = md.removeMember(mDTO);
+		
 		for(int i=0;i<mDTO.size();i++) {
 		
 		System.out.println("id:"+mDTO.get(i).getId());

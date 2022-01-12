@@ -24,11 +24,15 @@ public class MemberData {
 		Scanner sc = new Scanner(System.in);
 		String id = sc.next();
 		for (int i = 0; i < ar.size(); i++) {
+			System.out.println(ar.get(i).getId());
 			if (ar.get(i).getId().equals(id)) {
 				member=ar.remove(i);
-				break;
+				System.out.println("삭제 성공");
+				
+				return member;
 			}
 		}
+		System.out.println("삭제 실패");
 		return member;
 	}
 
