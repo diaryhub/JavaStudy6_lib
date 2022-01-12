@@ -1,6 +1,7 @@
 package com.study.s3.ex1;
 
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 public class MemberData {
 	
@@ -21,6 +22,23 @@ public class MemberData {
 		//MemberDTO들을 ArrayList에 담아서 리턴
 		ArrayList<MemberDTO> ar = new ArrayList();
 		
+		StringTokenizer st = new StringTokenizer(data,"-");
+		
+		while(st.hasMoreTokens()) {
+			MemberDTO mDTO = new MemberDTO();
+			String token = st.nextToken();
+			mDTO.setId(token);
+			token = st.nextToken();
+			mDTO.setPw(token);
+			token = st.nextToken();
+			mDTO.setName(token);
+			token = st.nextToken();
+			mDTO.setEmail(token);
+			token = st.nextToken();
+			mDTO.setAge(Integer.parseInt(token));
+			ar.add(mDTO);
+
+		}
 		
 		
 		
