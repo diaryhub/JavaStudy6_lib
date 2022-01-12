@@ -10,7 +10,15 @@ public class MemberMain {
 		MemberDTO mem1 = new MemberDTO();
 
 		ArrayList<MemberDTO> mDTO = md.init();
-
+		for(int i=0;i<mDTO.size();i++) {
+		
+		System.out.println("id:"+mDTO.get(i).getId());
+		System.out.println("pw:"+mDTO.get(i).getPw());
+		System.out.println("name:"+mDTO.get(i).getName());
+		System.out.println("Email:"+mDTO.get(i).getEmail());
+		System.out.println("age:"+mDTO.get(i).getAge());
+		}
+		
 	}
 
 }
