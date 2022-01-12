@@ -26,17 +26,16 @@ public class WrapperEX1 {
 		} else {
 			sex = "여";
 		}
-		if (Integer.parseInt(number[0].substring(2, 4)) == 3 || Integer.parseInt(number[0].substring(2, 4)) == 4
-				|| Integer.parseInt(number[0].substring(2, 4)) == 5) {
+		if (Integer.parseInt(number[0].substring(2, 4)) >= 3 || Integer.parseInt(number[0].substring(2, 4)) <= 5) {
 			season = "봄";
-		} else if (Integer.parseInt(number[0].substring(2, 4)) == 6 || Integer.parseInt(number[0].substring(2, 4)) == 7
-				|| Integer.parseInt(number[0].substring(2, 4)) == 8) {
+		} else if (Integer.parseInt(number[0].substring(2, 4)) >= 6
+				|| Integer.parseInt(number[0].substring(2, 4)) <= 8) {
 			season = "여름";
-		} else if (Integer.parseInt(number[0].substring(2, 4)) == 9 || Integer.parseInt(number[0].substring(2, 4)) == 10
-				|| Integer.parseInt(number[0].substring(2, 4)) == 11) {
+		} else if (Integer.parseInt(number[0].substring(2, 4)) >= 9
+				|| Integer.parseInt(number[0].substring(2, 4)) <= 11) {
 			season = "가을";
-		} else if (Integer.parseInt(number[0].substring(2, 4)) == 12 || Integer.parseInt(number[0].substring(2, 4)) == 1
-				|| Integer.parseInt(number[0].substring(2, 4)) == 2) {
+		} else if (Integer.parseInt(number[0].substring(2, 4)) >= 12
+				|| Integer.parseInt(number[0].substring(2, 4)) <= 2) {
 			season = "겨울";
 		}
 
@@ -98,11 +97,9 @@ public class WrapperEX1 {
 			}
 		} else {
 			int retry = (11 - sum % 11) % 10;
-			if(retry == ints[12]) {
+			if (retry == ints[12]) {
 				System.out.println("정상적인 번호입니다.");
-			}
-			else
-			{
+			} else {
 				System.out.println("잘못된 번호입니다.");
 			}
 		}
