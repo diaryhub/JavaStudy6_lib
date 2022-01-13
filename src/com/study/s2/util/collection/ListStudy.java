@@ -1,8 +1,29 @@
 package com.study.s2.util.collection;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ListStudy {
+	
+	
+	public List<String> study5() {
+		LinkedList<String> list = new LinkedList<>();
+		list.add("a");
+		return list;
+	}
+	
+	public void study4() {
+		LinkedList<Integer> list = new LinkedList();
+		
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		
+		System.out.println(list.get(0));
+		
+	}
+	
 	
 	public void study3() {
 		ArrayList<Integer> ar = new ArrayList<Integer>();
