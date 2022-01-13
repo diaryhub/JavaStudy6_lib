@@ -1,4 +1,4 @@
-package com.study.s3.ex1;
+package com.study.s3.ex1.member;
 
 public class MemberDTO {
 	
