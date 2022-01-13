@@ -36,15 +36,7 @@ public class StudentData {
 			
 			map.put(studentDTO.getId(), studentDTO);
 		}
-		for(int i=0;i<map.size();i++) {
-		System.out.println("ID:"+map.get(ar.get(i).getId()).getId());
-		System.out.println("이름:"+map.get(ar.get(i).getId()).getName());
-		System.out.println("국어:"+map.get(ar.get(i).getId()).getKor());
-		System.out.println("영어:"+map.get(ar.get(i).getId()).getEng());
-		System.out.println("수학:"+map.get(ar.get(i).getId()).getMath());
-		System.out.println("총점:"+map.get(ar.get(i).getId()).getTotal());
-		System.out.println("평균:"+map.get(ar.get(i).getId()).getAvg());
-		}
+		
 		return map;
 	}
 	
